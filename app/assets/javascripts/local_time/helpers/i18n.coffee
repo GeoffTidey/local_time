@@ -2,7 +2,7 @@
 {i18n} = config
 
 LocalTime.getI18nValue = (keyPath = "", {locale} = locale: config.locale) ->
-  value = getValue(i18n[locale], keyPath)
+  value = getValue(LocalTime.config.i18n[locale], keyPath)
   if value?
     value
   else if locale isnt config.defaultLocale
